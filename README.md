@@ -1,4 +1,9 @@
-# Bossjob Frontend Test
+# Bossjob Frontend Test - Alvin Theodora
+
+## Task Description
+1. Using redux && redux-thunk for state management
+2. Pagination is supported, utilizing the query parameter of url (using react-router-dom), so users are able to click browser's back button to show previous result
+
 
 ## Instruction
 Please implement the job list page as per design (job-list-design.jpg). 

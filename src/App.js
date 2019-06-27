@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-
 import Header from './shared/components/Header'
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Job from './components/Job';
+
 class App extends Component {
-  render() {
+  
+  render() {  
     return (
       <div className="App">
         <div className="App-Wrapper">
           <Header />
-          <div style={{padding: '10px 20px'}}>
-            <p>
-              Please show a list of jobs as per design
-            </p>
-          </div>
+
+          <Router>
+            <Switch>
+              <Route exact path={`${process.env.PUBLIC_URL}/`} component={Job} />
+            </Switch>
+          </Router>
+               
         </div>
       </div>
     );
